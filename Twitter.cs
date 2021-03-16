@@ -16,7 +16,7 @@ namespace NoahnFollowers
             Auth.SetUserCredentials("CONSUMER KEY", "CONSUMER SECRET KEY", "USER ACCESS TOKEN", "USER SECRET ACCESS TOKEN");
             var user = User.GetAuthenticatedUser();
 
-            long noahID = 3215227305;
+            long noahID = 0; //TRACKED ACCOUNT TWITTER ID HERE
             var noah = User.GetUserFromId(noahID);
 
             //--- Gets first list of followers
