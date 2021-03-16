@@ -15,7 +15,6 @@ namespace NoahnFollowers
         
             Auth.SetUserCredentials("CONSUMER KEY", "CONSUMER SECRET KEY", "USER ACCESS TOKEN", "USER SECRET ACCESS TOKEN");
             var user = User.GetAuthenticatedUser();
-            Console.WriteLine(user);
 
             long noahID = 3215227305;
             var noah = User.GetUserFromId(noahID);
@@ -31,7 +30,7 @@ namespace NoahnFollowers
             Thread.Sleep(43200000);
 
             //--- Gets second list of followers
-            var followers2 = noah.GetFollowers(258);
+            var followers2 = noah.GetFollowers(500);
             foreach (var follower in followers2) 
             {
                 f2List.Add(follower.ScreenName);
